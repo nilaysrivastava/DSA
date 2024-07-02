@@ -63,7 +63,7 @@ I would like to thank the following resources and platforms for providing valuab
 Feel free to reach out if you have any questions or suggestions:
 
 - **Email**: nilay2103@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/nilaysrivastava2103/)
-- **GitHub**: [your-username](https://github.com/nilaysrivastava)
+- **LinkedIn**: [nilaysrivastava2103](https://www.linkedin.com/in/nilaysrivastava2103/)
+- **GitHub**: [nilaysrivastava](https://github.com/nilaysrivastava)
 
 Happy Coding!
