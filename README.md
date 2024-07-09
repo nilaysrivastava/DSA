@@ -58,12 +58,4 @@ I would like to thank the following resources and platforms for providing valuab
 - [LeetCode](https://leetcode.com/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
-## Contact
-
-Feel free to reach out if you have any questions or suggestions:
-
-- **Email**: nilay2103@gmail.com
-- **LinkedIn**: [nilaysrivastava2103](https://www.linkedin.com/in/nilaysrivastava2103/)
-- **GitHub**: [nilaysrivastava](https://github.com/nilaysrivastava)
-
 Happy Coding!
