@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <bits/stdc++.h>
 
 void printArray(int arr[], int size)
 {
@@ -11,7 +12,6 @@ void printArray(int arr[], int size)
     printf("\n");
 }
 
-#include <bits/stdc++.h>
 class Solution
 {
 public:
