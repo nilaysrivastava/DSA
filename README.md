@@ -1,6 +1,6 @@
 # DSA Practice
 
-Welcome to the **DSA Practice** repository! This repository is a comprehensive collection of Data Structures and Algorithms (DSA) problems that I solve as part of my continuous learning and practice. The primary goal of this repository is to track my progress, share my solutions, and highlight the importance of DSA in programming.
+Welcome to the **DSA Practice** repository! This repository is a comprehensive collection of Data Structures and Algorithms (DSA) problems that I solve as part of my continuous learning and practice. This repository contains almost all the DSA problems and their solutions which are important for DSA preparation. The primary goal of this repository is to track my progress, share my solutions, and highlight the importance of DSA in programming.
 
 ## Table of Contents
 
@@ -29,14 +29,16 @@ Practicing DSA regularly helps in developing a strong foundation in programming.
 ## How to Use
 
 1. **Clone the Repository**: Clone this repository to your local machine using:
-    ```bash
-    git clone https://github.com/your-username/DSA.git
-    ```
+
+   ```bash
+   git clone https://github.com/your-username/DSA.git
+   ```
 
 2. **Navigate to a Topic Folder**: Each topic folder contains problems and their solutions.
-    ```bash
-    cd DSA/Arrays
-    ```
+
+   ```bash
+   cd DSA/Arrays
+   ```
 
 3. **Explore the Solutions**: Open the solution file in your preferred code editor to study the solution.
 
