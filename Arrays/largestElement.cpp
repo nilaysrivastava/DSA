@@ -22,6 +22,7 @@
 // arr may contain duplicate elements.
 
 #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 class Solution
