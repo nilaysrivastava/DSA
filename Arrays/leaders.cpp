@@ -27,94 +27,50 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
-    void setZeroes(vector<vector<int>>& matrix) {
-        int n = matrix.size();
-        int m = n > 0 ? matrix[0].size() : 0;
-        int col0 = 1;
-
-        // First pass to mark the rows and columns to be zeroed
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < m; j++) {
-                if(matrix[i][j] == 0) {
-                    matrix[i][0] = 0;
-                    if(j == 0) col0 = 0;
-                    else matrix[0][j] = 0;
-                }
+    // Function to find the leaders in the array.
+    vector<int> leaders(int n, int arr[]) {
+        vector<int> ans;
+        int max = arr[n - 1];
+        ans.push_back(arr[n - 1]);
+        
+        for(int i = n - 2; i >= 0; i--) {
+            if(arr[i] >= max) {
+                ans.push_back(arr[i]);
+                max = arr[i];
             }
         }
-
-        // Second pass to set the zeroes based on the markers
-        for(int i = 1; i < n; i++) {
-            for(int j = 1; j < m; j++) {
-                if(matrix[i][0] == 0 || matrix[0][j] == 0) {
-                    matrix[i][j] = 0;
-                }
-            }
-        }
-
-        // Set the first row to zero if needed
-        if(matrix[0][0] == 0) {
-            for(int j = 0; j < m; j++) {
-                matrix[0][j] = 0;
-            }
-        }
-
-        // Set the first column to zero if needed
-        if(col0 == 0) {
-            for(int i = 0; i < n; i++) {
-                matrix[i][0] = 0;
-            }
-        }
+        reverse(ans.begin(), ans.end());
+        return ans;
     }
 };
 
-// Utility function to print the matrix
-void printMatrix(const vector<vector<int>>& matrix) {
-    for(const auto& row : matrix) {
-        for(const auto& elem : row) {
-            cout << elem << " ";
-        }
-        cout << endl;
-    }
-}
-
 int main() {
     Solution sol;
-    
-    // Example 1
-    vector<vector<int>> matrix1 = {
-        {1, 1, 1},
-        {1, 0, 1},
-        {1, 1, 1}
-    };
-    
-    cout << "Original matrix 1:" << endl;
-    printMatrix(matrix1);
 
-    sol.setZeroes(matrix1);
-    
-    cout << "Modified matrix 1:" << endl;
-    printMatrix(matrix1);
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
 
-    // Example 2
-    vector<vector<int>> matrix2 = {
-        {0, 1, 2, 0},
-        {3, 4, 5, 2},
-        {1, 3, 1, 5}
-    };
+    int arr[n];
+    cout << "Enter the elements of the array: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
 
-    cout << "Original matrix 2:" << endl;
-    printMatrix(matrix2);
+    vector<int> result = sol.leaders(n, arr);
 
-    sol.setZeroes(matrix2);
-    
-    cout << "Modified matrix 2:" << endl;
-    printMatrix(matrix2);
+    cout << "The leaders in the array are: ";
+    for(int leader : result) {
+        cout << leader << " ";
+    }
+    cout << endl;
 
     return 0;
 }
+
