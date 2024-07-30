@@ -20,7 +20,7 @@
 
 #include <iostream>
 #include <vector>
-#include <unordered_map> // Change from map to unordered_map for better performance
+#include <unordered_map>
 using namespace std;
 
 class Solution {
@@ -46,7 +46,7 @@ public:
 
 int main() {
     Solution sol;
-    vector<int> nums = {1, 1, 1}; // Example input
+    vector<int> nums = {1, 1, 1}; // Example input from user
     int k = 2; // Example target sum
 
     int result = sol.subarraySum(nums, k);
