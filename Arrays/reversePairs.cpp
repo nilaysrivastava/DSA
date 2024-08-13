@@ -64,8 +64,6 @@ private:
         int j = mid + 1;
         int k = left;
         int count = 0;
-
-        // Count the important reverse pairs
         while (i <= mid && j <= right)
         {
             if ((long long)nums[i] > 2 * (long long)nums[j])
@@ -78,8 +76,6 @@ private:
                 i++;
             }
         }
-
-        // Merge the two halves
         i = left;
         j = mid + 1;
         k = left;
@@ -116,7 +112,6 @@ private:
 
 int main()
 {
-    // Test case
     vector<int> nums = {1, 3, 2, 3, 1};
 
     Solution solution;
