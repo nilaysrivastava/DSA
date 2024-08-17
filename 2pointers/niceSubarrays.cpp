@@ -34,14 +34,12 @@ public:
 
         while (right < nums.size())
         {
-            // Expand the window by including the right pointer
             if (nums[right] % 2 != 0)
             {
                 odd_count++;
             }
             right++;
 
-            // Shrink the window from the left until we have exactly k odd numbers
             while (odd_count > k)
             {
                 if (nums[left] % 2 != 0)
@@ -51,7 +49,6 @@ public:
                 left++;
             }
 
-            // If we have exactly k odd numbers, count the subarrays
             if (odd_count == k)
             {
                 int temp_left = left;
