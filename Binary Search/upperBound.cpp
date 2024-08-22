@@ -9,9 +9,7 @@
 // Input: x = 7 , arr[] = [5, 6, 8, 9, 6, 5, 5, 6]
 // Output: 6, 8
 // Explanation: Floor of 7 is 6 and ceil of 7 is 8.
-// Input: x = 10 , arr[] = [5, 6, 8, 8, 6, 5, 5, 6]
-// Output: 8, -1
-// Explanation: Floor of 10 is 8 but ceil of 10 is not possible.
+
 // Expected Time Complexity: O(n)
 // Expected Auxiliary Space: O(1)
 
