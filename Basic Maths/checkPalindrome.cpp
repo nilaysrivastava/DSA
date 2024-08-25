@@ -49,7 +49,6 @@ public:
             n = n / 10;
         }
 
-        // Check if the original number is equal to its reverse
         return x == rev;
 
         //              OR
