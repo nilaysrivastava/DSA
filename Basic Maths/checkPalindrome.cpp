@@ -29,7 +29,6 @@ public:
         long long rev = 0;
         long long n = x;
 
-        // Reverse the number
         while (n > 0)
         {
             long long ld = n % 10;
